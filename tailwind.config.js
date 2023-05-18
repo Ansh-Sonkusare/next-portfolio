@@ -7,8 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundColor:{
-        customBg:"#41436A"
+     colors:{
+      primary:" #41436A",
+      secondary:"#F54768"
+     },
+      fontFamily:{
+        logo:"Cecilia Octavia",
+        nohemi:"Nohemi"
+
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

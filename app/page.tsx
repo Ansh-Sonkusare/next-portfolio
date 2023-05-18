@@ -3,7 +3,7 @@ import Navbar from './navbar'
 export default function Home() {
   return (
     <>
-    <section id="navbar" className=''>
+    <section id="navbar">
 
     <Navbar/>
     </section>
