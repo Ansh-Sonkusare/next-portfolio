@@ -1,12 +1,13 @@
 import Image from 'next/image'
-import Navbar from './navbar'
+import Hero from './Hero'
+import About from './about'
+
 export default function Home() {
   return (
     <>
-    <section id="navbar">
+<Hero/>
+    <About/>
 
-    <Navbar/>
-    </section>
     </>
   )
 }

@@ -7,7 +7,7 @@ export default function Navbar() {
                 <div className="logo font-logo text-[32px]"> <span className="text-secondary">T</span>eak<span className="text-secondary">M</span>irror </div>
 
 
-                <ul className="font-normal text-[18px] font-nohemi flex flex-row p-4 md:p-0  md:space-x-4  ">
+                <ul className="font-normal text-[18px] font-nohemi  flex-row p-4 md:p-0 md:flex hidden  md:space-x-4  ">
 
                     <li>
                         <a href="#" className="block py-2 pl-3 pr-4 text-secondary" >Home</a>
