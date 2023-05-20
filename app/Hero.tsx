@@ -1,4 +1,4 @@
-
+import Button from "@/components/Button"
 
 export default function Hero() {
 
@@ -23,9 +23,8 @@ export default function Hero() {
           <p className='w-auto text-sm  mt-1 text-slate-300 text-center font-medium'>A tech enthusiast , Web developer , Designer and fond of turning ideas into reality with the power of code</p>
 
           <div>
-            <button className='bg-secondary w-72 font-bold text-nohemi p-3 mt-12 rounded-lg mx-12'>Contact Me</button>
-            {/* <button className='text-white border-2  border-secondary w-72 bg-transparent  font-bold text-nohemi p-3 mt-8 rounded-lg'>GitHub </button> */}
-
+            <Button>Contact Me</Button>
+          
           </div>
         </div>
       </div>
