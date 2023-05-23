@@ -6,8 +6,8 @@ interface AboutProps {
     
 }
  
-const About: FunctionComponent<any> = (props) => {
-    const user = props as User
+const About: FunctionComponent<AboutProps> = () => {
+    // const user = props as User
     
     return(
         <div className="about">
