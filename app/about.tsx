@@ -2,7 +2,7 @@
 import Button from "@/components/Button";
 import { User } from "./index";
 import { FunctionComponent } from "react";
-import GhCard from "@/components/Gh_Card";
+import GhCard from "@/components/GitHubCard";
 interface AboutProps {
     prop:User
 }
@@ -33,7 +33,7 @@ const About: FunctionComponent<AboutProps> = (props) => {
                <Button onClick={ () => console.log(123)  } className=' p-3 mt-12 '>See Github</Button>
              </div>
              
-             <GhCard dark className="" user={user}/>
+             <GhCard animate  className="" username="fireship-io"/>
            </div>
         </div>
     )

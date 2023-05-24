@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Hero from './Hero'
 import Button from "@/components/Button";
 import {useContext , createContext} from 'react'
-import Gh_Card from '@/components/Gh_Card'
+import Gh_Card from '@/components/GitHubCard'
 import About from './about';
 import {User} from './index'
 async function getData(): Promise<User> {
