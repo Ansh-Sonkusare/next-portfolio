@@ -1,12 +1,14 @@
 import { FunctionComponent, HTMLAttributes } from "react";
 
-interface ButtonProps extends HTMLAttributes<HTMLParagraphElement> {
+interface ButtonProps extends HTMLAttributes<HTMLButtonElement> { }
+
+const Button: FunctionComponent<ButtonProps> = ({ children,  className , onClick , ...PROPS} ) => {
+    if (!className) className = "";
+    className +=
+        " bg-secondary w-72 font-bold text-nohemi rounded-lg  ";
+
     
-}
- 
-const Button: FunctionComponent<ButtonProps > = ({children}) => {
-           
-            return (   <button className='bg-secondary w-72 font-bold text-nohemi p-3 mt-12 rounded-lg mx-12'>{children} </button> );
-}
- 
+    return <button {...PROPS } onClick={onClick} className={className}>{children} </button>;
+};
+
 export default Button;
