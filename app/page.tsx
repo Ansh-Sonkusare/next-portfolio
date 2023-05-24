@@ -21,10 +21,10 @@ export default async  function Home() {
   const user = await getData()
   
   
-return (
+ return (
     <>
 {/* <Hero/>*/}
-   <About />
+   <About prop={user}/>
 {/* <Gh_Card></Gh_Card> */}
     </>
   )

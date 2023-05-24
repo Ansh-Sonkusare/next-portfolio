@@ -2,17 +2,18 @@
 import Button from "@/components/Button";
 import { User } from "./index";
 import { FunctionComponent } from "react";
+import GhCard from "@/components/Gh_Card";
 interface AboutProps {
-    
+    prop:User
 }
  
-const About: FunctionComponent<AboutProps> = () => {
-    // const user = props as User
+const About: FunctionComponent<AboutProps> = (props) => {
+    const user = props.prop
     
     return(
         <div className="about">
 
-        <div className="mx-48 mt-48 flex  flex-row items-center justify-between space-x-96 ">
+        <div className="mx-64 mt-48 flex  flex-row items-center justify-between  ">
              <div className="w-[480px] ">
                <div id="details " className="mb-12  flex flex-row items-center ">
                  <p className="font-nohemi text-base "> About Me </p>
@@ -32,6 +33,7 @@ const About: FunctionComponent<AboutProps> = () => {
                <Button onClick={ () => console.log(123)  } className=' p-3 mt-12 '>See Github</Button>
              </div>
              
+             <GhCard dark className="" user={user}/>
            </div>
         </div>
     )
