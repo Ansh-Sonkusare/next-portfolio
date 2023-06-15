@@ -1,38 +1,41 @@
-import Button from "@/components/Button"
-
-export default function Hero() {
-
+import Button from "@/components/Button";
+import Image from "next/image";
+import { FunctionComponent, HTMLAttributes } from "react";
+interface HeroProps extends HTMLAttributes<HTMLDivElement> {}
+import profilePic from "@/public/Pfp.png";
+const Hero: FunctionComponent<HeroProps> = ({ className }) => {
   return (
-    <div id="Hero-Section" className="items-center justify-center  flex flex-col "> 
+    <div
+      id="Hero-Section"
+      className={"flex flex-col  items-center justify-center " + className}
+    >
+      <div className="w-[370px] md:w-[700px] ">
+        <div className="flex flex-col  items-center justify-center p-4  ">
+          <div className="mt-24 h-40 w-40 rounded-full ">
+            <Image className="rounded-full" src={profilePic} alt="Picture of the author" />{" "}
+          </div>
+          <p className="p-4  text-base font-light tracking-wider text-slate-100">
+            Hello, ✌
+          </p>
 
-
-
-      <div className="md:w-[700px] w-[370px]">
-        <div className='items-center justify-center  flex flex-col p-4  '>
-
-
-          <div className="w-44 h-44 bg-slate-300 rounded-full mt-8 md:mt-16"></div>
-          <p className='p-4  text-base tracking-wider text-slate-100 font-light'>Hello, ✌</p>
-
-
-          <pre className='text-center font-nohemi mt-4 md:mt-10 font-medium  text-6xl/[1] md:text-7xl/[100%]'>I Am <br />
+          <pre className="mt-4 text-center font-nohemi text-5xl/[1] font-medium  md:mt-10 md:text-7xl/[100%]">
+            I Am <br />
             Ansh Sonkusare
           </pre>
 
-
-          <p className='w-auto mt-1 text-base text-center font-normal '>A tech enthusiast , Web developer , Designer and fond of turning ideas into reality with the power of code</p>
+          <p className="mt-1 w-auto text-center text-base font-normal ">
+            A tech enthusiast , Web developer , Designer and fond of turning
+            ideas into reality with the power of code
+          </p>
 
           <div>
-            <Button className="p-3 mt-8 text-2xl  font-black">Contact Me</Button>
-          
+            <Button className="mt-8 p-3 text-2xl  font-semibold ">
+              Contact Me
+            </Button>
           </div>
         </div>
       </div>
-
-
-
-
-
     </div>
-  )
-}
+  );
+};
+export default Hero;
