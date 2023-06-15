@@ -15,15 +15,15 @@ export default function Hero() {
           <p className='p-4  text-base tracking-wider text-slate-100 font-light'>Hello, ✌</p>
 
 
-          <pre className='text-center font-nohemi mt-4 md:mt-12 font-medium  text-[2.5rem]/[1] md:text-8xl/[100%]'>I Am <br />
+          <pre className='text-center font-nohemi mt-4 md:mt-10 font-medium  text-6xl/[1] md:text-7xl/[100%]'>I Am <br />
             Ansh Sonkusare
           </pre>
 
 
-          <p className='w-auto text-sm  mt-1 text-slate-300 text-center font-medium'>A tech enthusiast , Web developer , Designer and fond of turning ideas into reality with the power of code</p>
+          <p className='w-auto mt-1 text-base text-center font-normal '>A tech enthusiast , Web developer , Designer and fond of turning ideas into reality with the power of code</p>
 
           <div>
-            <Button>Contact Me</Button>
+            <Button className="p-3 mt-8 text-2xl  font-black">Contact Me</Button>
           
           </div>
         </div>

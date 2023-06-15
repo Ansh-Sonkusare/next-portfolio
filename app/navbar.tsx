@@ -1,13 +1,21 @@
-export default function Navbar() {
+import { FunctionComponent, HTMLAttributes } from "react"
+
+interface NavbarProps extends HTMLAttributes<HTMLDivElement>{
+    
+}
+ 
+
+
+const Navbar: FunctionComponent<NavbarProps> = ({className}) => {
     return (
-        <>
+        <div className={className}>
 
-            <nav className="flex mt-5  justify-between items-center max-w-7xl mx-auto p-4 ">
+            <nav className="flex mt-5  justify-between items-center max-w-[1360px] mx-auto p-4 ">
 
-                <div className="logo font-logo text-[32px]"> <span className="text-secondary">T</span>eak<span className="text-secondary">M</span>irror </div>
+                <div className="logo font-logo text-4xl"> <span className="text-secondary">T</span>eak<span className="text-secondary">M</span>irror </div>
 
 
-                <ul className="font-normal text-[18px] font-nohemi  flex-row p-4 md:p-0 md:flex hidden  md:space-x-4  ">
+                <ul className="font-light text-2xl font-nohemi  flex-row p-4 md:p-0 md:flex hidden  md:space-x-4  ">
 
                     <li>
                         <a href="#" className="block py-2 pl-3 pr-4 text-secondary" >Home</a>
@@ -29,6 +37,8 @@ export default function Navbar() {
 
             </nav>
 
-        </>
+        </div>
     )
 }
+
+export default Navbar;

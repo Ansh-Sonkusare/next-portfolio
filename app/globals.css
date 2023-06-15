@@ -3,7 +3,5 @@
 @tailwind utilities;
 
 
-
-
-
-
+@import url('../public/Font/Web/Cecilia/stylesheet.css');
+@import '../public/Font/Web/Nohemi/stylesheet.css';

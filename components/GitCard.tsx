@@ -1,31 +1,61 @@
 "use client";
-import { FunctionComponent, HTMLAttributes, use } from "react";
-import { User } from "@/app";
-
+// import { getData } from "@/lib/utils";
+import React, { useEffect ,  FunctionComponent } from "react";
+// import React from "react";
+import {HTMLAttributes, useState } from "react";
+interface User {
+  login: string;
+  id: number;
+  node_id: string;
+  avatar_url: string;
+  gravatar_id: string;
+  url: string;
+  html_url: string;
+  followers_url: string;
+  following_url: string;
+  gists_url: string;
+  starred_url: string;
+  subscriptions_url: string;
+  organizations_url: string;
+  repos_url: string;
+  events_url: string;
+  received_events_url: string;
+  type: string;
+  site_admin: boolean;
+  name: string;
+  company: string | null;
+  blog: string;
+  location: string | null;
+  email: string | null;
+  hireable: boolean;
+  bio: string;
+  twitter_username: string | null;
+  public_repos: number;
+  public_gists: number;
+  followers: number;
+  following: number;
+  created_at: string;
+  updated_at: string;
+}
 interface GitHubCardProps extends HTMLAttributes<HTMLDivElement> {
-  username: string,
-  animate? : boolean
+  user: User;
+  animate?: boolean;
 }
 
-// Funnction to fetch data
-async function getData(user: string): Promise<User> {
-  let res = await fetch(`https://api.github.com/users/${user}`, {});
 
-  res = await res.json();
-  const userJson = res as unknown as User;
-  return userJson;
-}
 
-const GitHubCard: FunctionComponent<GitHubCardProps> = ({
-  animate,
-  username,
-  className,
-}) => {
-  const user = use(getData(username));
+export const GitHubCard: FunctionComponent<GitHubCardProps> = ({
+    animate,
+    user,
+    className,
+  }) => {
+ 
+
+  // getData("Ansh-Sonkusare")
   const anime = animate ? " transition duration-500  hover:translate-y-[-5px] hover:scale-110 hover:delay-100" : ""
   return (
     <>
-      <div className={className}>
+      <div className={className + anime} >
       
         <div className={"relative inline-block  rounded-md bg-[#222833] px-14 py-6 pt-2 text-center font-mono  shadow-xl shadow-[#2b2a2b] " + anime}>
           <div className="absolute left-0 right-0 top-0 m-0 h-28 w-full rounded-t-md bg-[#F54768] "></div>
@@ -51,7 +81,7 @@ const GitHubCard: FunctionComponent<GitHubCardProps> = ({
               </div>
               <h1>
                 <a
-                  className="font-mono text-2xl font-semibold"
+                  className="font-mono text-2xl text-white font-semibold"
                   href={user.html_url}
                   target="_blank"
                   rel="noopener"
@@ -64,7 +94,7 @@ const GitHubCard: FunctionComponent<GitHubCardProps> = ({
                   {user.login}
                 </a>
               </div>
-              <p className="w-60 font-mono text-base">{user.bio ?? ""}</p>
+              <p className="w-60 font-mono text-white text-base">{user.bio ?? ""}</p>
               <div className="mt-8">
                 <div className="flex justify-around space-x-2 rounded-md border-t-4 border-t-[#F54768]  bg-[#1D2025] p-2 shadow-md shadow-slate-800">
                   <div className="box-wrapper">
@@ -95,4 +125,6 @@ const GitHubCard: FunctionComponent<GitHubCardProps> = ({
   );
 };
 
+
 export default GitHubCard;
+export type { GitHubCardProps };

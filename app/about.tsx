@@ -1,14 +1,15 @@
-'use client';
-import Button from "@/components/Button";
-import { User } from "./index";
-import { FunctionComponent } from "react";
-import GhCard from "@/components/GitHubCard";
+
+import GitHubCard from "@/components/GitCard";
+import { getData } from "@/lib/data";
+import { use } from "react";
+
+
 interface AboutProps {
-    prop:User
+  
 }
  
-const About: FunctionComponent<AboutProps> = (props) => {
-    const user = props.prop
+const About  =  () => {
+    const user = use(getData("fireship-io"))
     
     return(
         <div className="about">
@@ -23,21 +24,21 @@ const About: FunctionComponent<AboutProps> = (props) => {
                <p className="font-nohemi text-xl/tight tracking-normal">
              
                  Lorem ipsum dolor sit amet consectetur. Cursus arcu ac cras donec
-                 vel. Elementum justo augue diam malesuada odio. Turpis elit cras
+                 vel. Elementum justo augue diam malesuada odio. Turpis elit cras 
                  sollicitudin morbi vestibulum posuere. Faucibus suspendisse sed
                  porttitor non amet odio enim volutpat. Amet nunc sem ac erat
                  pellentesque ac vitae. Quam est eu nascetur neque morbi in. Enim
                  nulla varius etiam nec arcu adipiscing. Maecenas eget quis eros sed
                  consectetur. Volutpat et ac nisl in elementum facilisis facilisis.
                </p>
-               <Button onClick={ () => console.log(123)  } className=' p-3 mt-12 '>See Github</Button>
+               {/* <Button onClick={() => console.log(123)  } className=' p-3 mt-12 '>See Github</Button> */}
              </div>
-             
-             <GhCard animate  className="" username="fireship-io"/>
+
+             <GitHubCard animate user={user}/>
+
            </div>
         </div>
     )
 }
- 
 export default About;
  
