@@ -7,23 +7,35 @@ import Button from "@/components/Button";
 interface ContactProps extends HTMLAttributes<HTMLDivElement> {}
 
 const Contact = ({ className }: ContactProps) => {
-  const user = use(getData("fireship-io"));
+ 
 
   return (
-    <div className={"about bg-[#203241]  " + className}>
-      <div className="flex  flex-col  items-center justify-between pb-40 md:flex-row lg:mx-96 lg:flex-row  ">
-        <h1 className="w-[600px]  text-[140px]/[100%] font-semibold ">
+    <div className={" bg-[#203241]  " + className}>
+      <div className="flex  flex-col  items-center justify-between md:flex-row lg:flex-row mx-24 xl:mx-96 Pc:mx-40  ">
+        <h1 className="hidden  text-2xl font-semibold md:inline md:text-[100px]/[100%]   Mini-Pc:mr-64 Pc:text-[140px]/[100%] ">
           Let's get in touch
         </h1>
 
-        <div className="flex w-[480px] flex-col items-center justify-center rounded-3xl bg-[#1C1D21]">
-          <h1 className="p-8 text-center  text-5xl  font-semibold">
+        <div className="mx-14 flex w-[400px] flex-col items-center justify-center rounded-3xl bg-[#1C1D21] Pc:w-[400px] Pc:px-60">
+          <h1 className="p-8 text-center  text-5xl   font-semibold">
             Send a Message
           </h1>
-            <input type="text" placeholder="Name" className="bg-transparent border-b-2 py-1 my-6  border-slate-400 w-96 text-white outline-none placeholder-white"/>
-            <input type="text" placeholder="Name" className="bg-transparent border-b-2 py-1 my-6 border-slate-400 w-96 text-white outline-none placeholder-white"/>
-            <input type="text" placeholder="Name" className="bg-transparent border-b-2 py-1 my-6 border-slate-400 w-96 text-white outline-none placeholder-white"/>
-            
+          <input
+            type="text"
+            placeholder="Name"
+            className="my-6 w-80 border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-white outline-none md:w-72 lg:w-80"
+          />
+          <input
+            type="text"
+            placeholder="Name"
+            className="my-6 w-80 border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-white outline-none md:w-72 lg:w-80"
+          />
+          <input
+            type="text"
+            placeholder="Name"
+            className="my-6 w-80 border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-white outline-none md:w-72 lg:w-80"
+          />
+
           <Button className="m-8 mt-8 p-2 text-xl  font-medium">
             Contact Me
           </Button>

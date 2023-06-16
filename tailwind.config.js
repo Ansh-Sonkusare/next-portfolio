@@ -8,6 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        "Mini-Pc":"1200px",
+        "Pc":"1700px"
+
+      },
      colors:{
       primary:" #41436A",
       secondary:"#F54768"

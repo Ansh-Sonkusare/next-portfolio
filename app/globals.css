@@ -4,3 +4,16 @@
 
 @import url("../public/Font/Web/Cecilia/stylesheet.css");
 @import "../public/Font/Web/Nohemi/stylesheet.css";
+
+  
+
+.cards-wrapper {
+  
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow: auto;
+    padding-bottom: 1rem;
+    
+    
+  }
