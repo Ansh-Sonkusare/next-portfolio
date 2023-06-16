@@ -41,10 +41,10 @@ const SkillSet: FunctionComponent<SkillSetProps> = ({ className }) => {
           </p>
         </div>
       </div> */}
-      <div className="grid grid-flow-col gap-4 overflow-auto lg:flex lg:justify-center lg:gap-14">
+      <div className="grid grid-flow-col gap-4 font-nohemi text-md tracking-wider text-center overflow-auto lg:flex lg:justify-center lg:gap-14">
         <div className=" flex w-80 flex-col items-center justify-center rounded-xl bg-slate-600 bg-opacity-100  p-8">
           <div className="h-36 w-36 rounded-full bg-slate-300 "></div>
-          <p className="mt-8">
+          <p className="mt-8 ">
             Lorem ipsum dolor sit amet consectetur. Cursus arcu ac cras donec
             vel. Elementum justo augue diam malesuada odio. Turpis elit cras
             sollicitudin morbi vestibulum posuere.

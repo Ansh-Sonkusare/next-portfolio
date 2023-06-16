@@ -13,14 +13,14 @@ const About = ({ className }: AboutProps) => {
         "about bg-gradient-to-t from-[#355C7D] to-[#41436A] " + className
       }
     >
-      <div className="flex  flex-col  items-center justify-between  md:flex-row lg:mx-72 lg:flex-row  ">
-        <div className="w-96 md:w-[480px] ">
+      <div className=" flex  flex-col mx-0 items-center justify-between md:mx-8 md:flex-row xl:mx-64 lg:mx-12 lg:flex-row  ">
+        <div className="w-80 md:w-[480px] ">
           <div id="details " className="mb-8  flex flex-row items-center ">
             <p className="font-nohemi text-xl "> About Me </p>
             <div className=" ml-5 flex h-3 w-24 bg-secondary blur-sm"></div>
           </div>
           <h1 className="mb-3 text-5xl font-bold">Developer</h1>
-          <p className="w-[400px] font-nohemi text-xl/tight tracking-normal">
+          <p className="sm:w-[380px] w-[320px] font-nohemi text-xl/tight tracking-normal">
             Lorem ipsum dolor sit amet consectetur. Cursus arcu ac cras donec
             vel. Elementum justo augue diam malesuada odio. Turpis elit cras
             sollicitudin morbi vestibulum posuere. Faucibus suspendisse sed
@@ -32,7 +32,7 @@ const About = ({ className }: AboutProps) => {
           {/* <Button onClick={() => console.log(123)  } className=' p-3 mt-12 '>See Github</Button> */}
         </div>
 
-        <GitHubCard className="mt-12 md:mt-0" animate user={user} />
+        <GitHubCard className="md:block hidden mt-12 md:mt-0" animate user={user} />
       </div>
     </div>
   );
