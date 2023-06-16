@@ -14,7 +14,7 @@ const Contact = ({ className }: ContactProps) => {
       <div className="flex  flex-col  items-center justify-between md:flex-row lg:flex-row mx-24 xl:mx-24 Pc:mx-96  ">
         <div className="w-96 ">
         <h1 className="hidden   text-2xl font-semibold md:inline md:text-[90px]/[100%]   Mini-Pc:mr-64 Pc:text-[140px]/[100%] ">
-          Let get in touch
+          Let&apos;s get in touch
         </h1>
 </div>
         <div className=" sm:mx-8 ml-0 flex w-[350px] sm:w-[400px] px-0 flex-col items-center justify-center rounded-3xl bg-[#1C1D21] Pc:w-[400px] Pc:px-60">
