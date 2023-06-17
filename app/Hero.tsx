@@ -6,7 +6,7 @@ import profilePic from "@/public/Pfp.png";
 const Hero: FunctionComponent<HeroProps> = ({ className }) => {
   return (
     <div
-      id="Hero-Section"
+      id="Hero"
       className={"flex flex-col  items-center justify-center " + className}
     >
 

@@ -10,7 +10,7 @@ const Contact = ({ className }: ContactProps) => {
   const user = use(getData("fireship-io"));
 
   return (
-    <div className={" bg-[#203241]  " + className}>
+    <div id="Contact" className={" bg-[#203241]  " + className}>
       <div className="flex  flex-col  items-center justify-center gap-[30%] lg:gap-[20%] md:flex-row md:gap-2  mx-24 xl:mx-24 Pc:mx-96  ">
         <div className="w-96 ">
         <h1 className="hidden   text-2xl font-semibold md:inline  xl:text-[140px]/[100%]  md:text-[90px]/[100%] lg:text-[100px]">
