@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { FunctionComponent, HTMLAttributes } from "react";
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {}
@@ -9,11 +10,9 @@ const Button: FunctionComponent<ButtonProps> = ({
   ...PROPS
 }) => {
   if (!className) className = "";
-  className +=
-    " bg-secondary w-80 duration-500  text-nohemi rounded-xl hover:shadow-button-glow hover:shadow-secondary hover:duration-500 ";
 
   return (
-    <button {...PROPS} onClick={onClick} className={className}>
+    <button {...PROPS} onClick={onClick} className={cn(" bg-secondary w-64 duration-500  text-nohemi rounded-xl hover:shadow-button-glow hover:shadow-secondary hover:duration-500 ",className)}>
       {children}{" "}
     </button>
   );
