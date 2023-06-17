@@ -9,7 +9,9 @@ const Hero: FunctionComponent<HeroProps> = ({ className }) => {
       id="Hero-Section"
       className={"flex flex-col  items-center justify-center " + className}
     >
-      <div className="w-[350px] md:w-[700px] ">
+
+      <div className="w-[90%] low-mob:w-[350px] md:w-[700px] ">
+
         <div className="flex flex-col  items-center justify-center p-4  ">
           <div className="mt-24 h-40 w-40 rounded-full ">
             <Image className="rounded-full" src={profilePic} alt="Picture of the author" />{" "}

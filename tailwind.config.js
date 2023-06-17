@@ -12,7 +12,8 @@ module.exports = {
         "Mini-Pc":"1200px",
         "Pc":"1700px",
         "mobile":"390px",
-        "ipad":"766px"
+        "ipad":"766px",
+        "low-mob":"350px"
       },
      colors:{
       primary:" #41436A",

@@ -10,7 +10,7 @@ export default async function Home() {
       <Hero />
       <About className="pt-20 md:pt-60 " />
       <SkillSet className="pt-20 md:pt-48" />
-      <Contact className="pt-20 Mini-Pc:pt-60" />
+      <Contact className="pt-20 xl:pt-60" />
     </>
   );
 }
