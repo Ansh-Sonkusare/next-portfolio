@@ -12,7 +12,7 @@ const Button: FunctionComponent<ButtonProps> = ({
   if (!className) className = "";
 
   return (
-    <button {...PROPS} onClick={onClick} className={cn(" bg-secondary w-64 duration-500  text-nohemi rounded-xl hover:shadow-button-glow hover:shadow-secondary hover:duration-500 ",className)}>
+    <button {...PROPS} onClick={onClick} className={" bg-secondary duration-500 w-64  text-nohemi rounded-xl hover:shadow-button-glow hover:shadow-secondary hover:duration-500 "+ className }>
       {children}{" "}
     </button>
   );

@@ -8,8 +8,8 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <About className="pt-20 md:pt-60 " />
-      <SkillSet className="pt-20 md:pt-48" />
+      <About className="pt-20 md:pt-56 " />
+      <SkillSet className="pt-20 md:pt-32" />
       <Contact className="pt-20 xl:pt-60" />
     </>
   );

@@ -8,7 +8,7 @@ const About = ({ className }: AboutProps) => {
   const user = use(getData("Ansh-Sonkusare"));
 
   return (
-    <div
+    <div id="About"
       className={
         "about bg-gradient-to-t from-[#355C7D] to-[#41436A] " + className
       }
@@ -19,15 +19,10 @@ const About = ({ className }: AboutProps) => {
             <p className="font-nohemi text-xl "> About Me </p>
             <div className=" ml-5 flex h-3 w-24 bg-secondary blur-sm"></div>
           </div>
-          <h1 className="mb-3 text-5xl font-bold">Developer</h1>
+          <h1 className="mb-4 text-5xl font-bold">Developer</h1>
           <p className="sm:w-[380px] w-[320px] font-nohemi text-xl/tight tracking-normal">
-            Lorem ipsum dolor sit amet consectetur. Cursus arcu ac cras donec
-            vel. Elementum justo augue diam malesuada odio. Turpis elit cras
-            sollicitudin morbi vestibulum posuere. Faucibus suspendisse sed
-            porttitor non amet odio enim volutpat. Amet nunc sem ac erat
-            pellentesque ac vitae. Quam est eu nascetur neque morbi in. Enim
-            nulla varius etiam nec arcu adipiscing. Maecenas eget quis eros sed
-            consectetur. Volutpat et ac nisl in elementum facilisis facilisis.
+            
+ A talented 16-year-old Full-Stack Developer with a remarkable three-year journey in web development. Alongside this impressive feat, I have dedicated the past year to immersing myself in the captivating world of  AI & ML. While my current portfolio may not be extensive, my relentless commitment to self-improvement is evident as I consistently strive to refine my skills and broaden my horizons in these dynamic fields.
           </p>
           {/* <Button onClick={() => console.log(123)  } className=' p-3 mt-12 '>See Github</Button> */}
         </div>
