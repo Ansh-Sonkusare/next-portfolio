@@ -19,8 +19,8 @@ const SkillSet: FunctionComponent<SkillSetProps> = ({ className }) => {
       <h1 className="mt-4 text-center font-nohemi text-6xl/[1] font-bold  md:mt-10 md:text-7xl">
         Skill-Set
       </h1>
-      <div className="mt-8 grid grid-flow-col gap-4 font-nohemi text-md tracking-wider text-center overflow-auto lg:flex lg:justify-center lg:gap-14">
-        <div className=" flex w-80 flex-col items-center justify-center rounded-xl bg-slate-600 bg-opacity-100  p-8">
+      <div className="mt-8 grid grid-flow-col gap-6 font-nohemi text-md tracking-wider text-center overflow-auto lg:flex lg:justify-center lg:gap-14">
+        <div className="ml-6 Mini-Pc:ml-0 flex w-80 flex-col items-center justify-center rounded-xl bg-slate-600 bg-opacity-100  p-8">
           <div className="h-36 w-36 rounded-full bg-slate-300 shadow-2xl "><Image className="h-36 w-36 " src={Javascript} alt="Image"/></div>
           <h1 className="mt-8 text-2xl font-bold">Javascript</h1> 
           <p className="text-slate-300">
@@ -35,7 +35,7 @@ const SkillSet: FunctionComponent<SkillSetProps> = ({ className }) => {
           Making Discord bots is one of my core skills. I can make Discord bots using Discord.Js. Eg: General Purpose and Music Bots
           </p>
         </div>
-        <div className=" flex w-80 flex-col items-center justify-center rounded-xl bg-slate-600 bg-opacity-100  p-8">
+        <div className="mr-6 Mini-Pc:mr-0 flex w-80 flex-col items-center justify-center rounded-xl bg-slate-600 bg-opacity-100  p-8">
         <div className="h-36 w-36 rounded-3xl bg-slate-800 shadow-2xl"><Image className="h-36 w-36 p-3 fill-slate-200" src={Server} alt="Image"/></div>
 
           <h1 className="mt-8 text-2xl font-bold">Back-End</h1>
