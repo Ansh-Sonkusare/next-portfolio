@@ -36,7 +36,7 @@ const SkillSet: FunctionComponent<SkillSetProps> = ({ className }) => {
           </p>
         </div>
         <div className=" flex w-80 flex-col items-center justify-center rounded-xl bg-slate-600 bg-opacity-100  p-8">
-        <div className="h-36 w-36 rounded-3xl bg-slate-800 shadow-2xl"><Image className="h-36 w-36 p-3 " src={Server} alt="Image"/></div>
+        <div className="h-36 w-36 rounded-3xl bg-slate-800 shadow-2xl"><Image className="h-36 w-36 p-3 fill-slate-200" src={Server} alt="Image"/></div>
 
           <h1 className="mt-8 text-2xl font-bold">Back-End</h1>
           <p className="text-slate-300">
