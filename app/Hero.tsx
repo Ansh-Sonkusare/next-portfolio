@@ -32,7 +32,9 @@ const Hero: FunctionComponent<HeroProps> = ({ className }) => {
 
           <div>
             <Button className="mt-8 p-3 text-2xl  font-semibold ">
+            <a href="#Contact" className="py-2 ">
               Contact Me
+            </a>
             </Button>
           </div>
         </div>
