@@ -13,7 +13,7 @@ const About = ({ className }: AboutProps) => {
         "about bg-gradient-to-t from-[#355C7D] to-[#41436A] " + className
       }
     >
-      <div className=" flex  flex-col mx-0 items-center justify-between md:mx-8 md:flex-row xl:mx-64 lg:mx-12 lg:flex-row  ">
+      <div className=" flex  flex-col mx-0 items-center justify-center md:flex-row xl:gap-[20%]   lg:flex-row  ">
         <div className="w-80 md:w-[480px] ">
           <div id="details " className="mb-8  flex flex-row items-center ">
             <p className="font-nohemi text-xl "> About Me </p>

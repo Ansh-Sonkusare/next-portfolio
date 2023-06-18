@@ -5,7 +5,7 @@ interface NavbarProps extends HTMLAttributes<HTMLDivElement> {}
 const Navbar: FunctionComponent<NavbarProps> = ({ className }) => {
   return (
     <div className={className}>
-      <nav className="mx-auto flex md:w-[90%] lg:w-auto lg:mx-8 xl:mx-32 items-center justify-between p-4 md:mt-5 lg:mt-0">
+      <nav className="mx-auto flex md:w-[90%] lg:w-auto lg:mx-8 xl:mx-32 items-center justify-center gap-[40%] p-4 md:mt-5 lg:mt-0">
         <div className="font-logo text-2xl font-semibold md:text-4xl">
       
           <span className="text-secondary">T</span>eak
