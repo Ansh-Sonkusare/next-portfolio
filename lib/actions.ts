@@ -1,6 +1,7 @@
 'use server'
 
 export async function addItem(data:FormData) {
+    
     const user = {
         name:data.get("name") as string,
         email:data.get("email")as string ,
@@ -21,8 +22,6 @@ export async function addItem(data:FormData) {
               'Content-type': 'application/json'
           },
           body: JSON.stringify(params)
-      }).then(res => {
-          console.log(res);
-      }) 
+      })
     
   }

@@ -12,6 +12,8 @@ import { addItem } from '@/lib/actions'
 interface ContactProps extends HTMLAttributes<HTMLDivElement> {}
 
 const Contact = ({ className }: ContactProps) => {
+  console.log(process.env.hookUrl);
+  
 
     const forms = useRef<HTMLFormElement>(null)
     const sub = () =>{
