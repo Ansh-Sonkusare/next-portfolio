@@ -40,7 +40,7 @@ const SkillSet: FunctionComponent<SkillSetProps> = ({ className }) => {
 
           <h1 className="mt-8 text-2xl font-bold">Back-End</h1>
           <p className="text-slate-300">
-          With the help of Node.js , Express.js and now adding Next.js to my repertoire , I can very well write Back-End code of any kind
+          With the help of Node.JS , Express.JS and now adding Next.JS to my repertoire , I can very well write Back-End code of any kind
           </p>
         </div>
       </div>
