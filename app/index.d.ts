@@ -32,4 +32,10 @@
     created_at: string;
     updated_at: string;
   }
-  
+  declare global {
+    namespace NodeJS {
+      interface ProcessEnv {
+       hookUrl:string
+      }
+    }
+  }

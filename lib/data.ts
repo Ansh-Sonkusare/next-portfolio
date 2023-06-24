@@ -7,3 +7,4 @@ export  const getData = cache(async(user: string) => {
     return res as unknown as User;
   }
 )
+
