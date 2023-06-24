@@ -1,4 +1,4 @@
-import { User } from "@/app";
+import { User } from "@/app" ;
 import { cache } from "react";
 
 export  const getData = cache(async(user: string) => {
