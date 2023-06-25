@@ -1,6 +1,7 @@
 'use server'
 
 export async function addItem(data:FormData) {
+    console.log(process.env.hookUrl);
     
     const user = {
         name:data.get("name") as string,
