@@ -6,10 +6,14 @@ import { HTMLAttributes, useRef } from "react";
 import Button from "@/components/Button";
 import { addItem } from "@/lib/actions";
 
+
 interface ContactProps extends HTMLAttributes<HTMLDivElement> {}
 
 const Contact = ({ className }: ContactProps) => {
   const forms = useRef<HTMLFormElement>(null);
+
+
+
   const sub = () => {
     Swal.fire({
       title: "Sucess",
@@ -17,7 +21,13 @@ const Contact = ({ className }: ContactProps) => {
       icon: "success",
       confirmButtonText: "Cool",
     });
+    if(forms.current){
+      addItem(new FormData(forms.current))
     setTimeout(() => forms.current?.reset(), 400);
+    
+  }
+    
+    
   };
   return (
     <div id="Contact" className={" bg-[#203241]  " + className}>
@@ -33,9 +43,10 @@ const Contact = ({ className }: ContactProps) => {
           </h1>
           <form
             className="flex flex-col items-center justify-center "
+            method="POST"
             onSubmit={sub}
             ref={forms}
-            action={addItem}
+
           >
             <input
               name="name"
