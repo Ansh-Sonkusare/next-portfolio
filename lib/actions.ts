@@ -1,7 +1,10 @@
 'use server'
 
-export async function addItem(data:FormData) {
+import fetch from "node-fetch"
 
+export async function addItem(data:FormData) {
+    console.log(1);
+    
     
     const user = {
         name:data.get("name") as string,
