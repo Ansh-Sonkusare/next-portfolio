@@ -35,7 +35,10 @@
   declare global {
     namespace NodeJS {
       interface ProcessEnv {
-       hookUrl:string
+      
+       API_KEY:string,
+     
+
       }
     }
   }
