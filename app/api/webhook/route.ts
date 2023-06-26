@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
  
 export async function POST(request:Request) {
 
-    console.log(1);
+    console.log(process.env.API_KEY , process.env.API_URL);
     
     const data = await request.formData()
     
@@ -30,7 +30,7 @@ export async function POST(request:Request) {
           },
           body: JSON.stringify(params)
       })
-      return NextResponse.json({ "status":"sucess" })
+      return NextResponse.json({ "status":`${process.env.API_KEY} , ${process.env.API_URL}` })
 
   }
 
