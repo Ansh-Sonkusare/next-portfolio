@@ -22,7 +22,14 @@ const Contact = ({ className }: ContactProps) => {
       confirmButtonText: "Cool",
     });
     if(forms.current){
-      addItem(new FormData(forms.current))
+    const form = new FormData(forms.current)
+      console.log(form);
+      
+      fetch("/api/webhook", {
+        method: "POST",
+        body:form
+    })
+
     setTimeout(() => forms.current?.reset(), 400);
     
   }
