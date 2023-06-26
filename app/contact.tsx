@@ -4,15 +4,11 @@ import Swal from "sweetalert2";
 import { HTMLAttributes, useRef } from "react";
 
 import Button from "@/components/Button";
-import { addItem } from "@/lib/actions";
-
 
 interface ContactProps extends HTMLAttributes<HTMLDivElement> {}
 
 const Contact = ({ className }: ContactProps) => {
   const forms = useRef<HTMLFormElement>(null);
-
-
 
   const sub = () => {
     Swal.fire({
@@ -21,21 +17,15 @@ const Contact = ({ className }: ContactProps) => {
       icon: "success",
       confirmButtonText: "Cool",
     });
-    if(forms.current){
-    const form = new FormData(forms.current)
-      console.log(form);
-      
-      fetch("/api/webhook", {
-        method: "POST",
-        body:form
-    })
+    if (forms.current) {
+      const data = new FormData(forms.current);
+      fetch("api/test/", { method: "POST", body: data })
+
+    }
 
     setTimeout(() => forms.current?.reset(), 400);
-    
-  }
-    
-    
   };
+
   return (
     <div id="Contact" className={" bg-[#203241]  " + className}>
       <div className="mx-24  flex  flex-col items-center justify-center gap-[30%] md:flex-row md:gap-2  lg:gap-[20%] xl:mx-24 Pc:mx-96  ">
@@ -50,16 +40,13 @@ const Contact = ({ className }: ContactProps) => {
           </h1>
           <form
             className="flex flex-col items-center justify-center "
-            method="POST"
-            onSubmit={sub}
             ref={forms}
-
           >
             <input
               name="name"
               type="text"
               placeholder="Name"
-              className="m-3 w-full border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-6 md:w-72 lg:w-80"
+              className="border-b-2bg-transparent m-3  w-full border-slate-400 py-1 text-white placeholder-slate-400 outline-none low-mob:my-6 md:w-72 lg:w-80"
             />
             <input
               name="email"
@@ -74,7 +61,13 @@ const Contact = ({ className }: ContactProps) => {
               className="m-3 w-full border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-6 md:w-72 lg:w-80"
             />
 
-            <Button className=" m-8 mt-8 p-2  text-xl font-medium low-mob:m-8 low-mob:w-[80%]  Pc:w-[300px]">
+            <Button
+              onClick={(e) => {
+                e.preventDefault();
+                sub();
+              }}
+              className=" m-8 mt-8 p-2  text-xl font-medium low-mob:m-8 low-mob:w-[80%]  Pc:w-[300px]"
+            >
               Contact Me
             </Button>
           </form>
