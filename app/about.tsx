@@ -31,7 +31,7 @@ const About = ({ className }: AboutProps) => {
             as I consistently strive to refine my skills and broaden my horizons
             in these dynamic fields.
           </p>
-          <a className="md:hidden" href= "https://google.com"> <Button  className=" mt-8 p-3  "> See Github</Button></a>
+          <a className="md:hidden" href= "https://github.com/Ansh-Sonkusare/next-portfolio"> <Button  className=" mt-8 p-3  "> See Github</Button></a>
        
         </div>
 
