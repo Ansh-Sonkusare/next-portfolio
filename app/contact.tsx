@@ -19,8 +19,7 @@ const Contact = ({ className }: ContactProps) => {
     });
     if (forms.current) {
       const data = new FormData(forms.current);
-      fetch("api/test/", { method: "POST", body: data })
-
+      fetch("api/test/", { method: "POST", body: data });
     }
 
     setTimeout(() => forms.current?.reset(), 400);
@@ -39,6 +38,10 @@ const Contact = ({ className }: ContactProps) => {
             Send a Message
           </h1>
           <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            sub();
+          }}
             className="flex flex-col items-center justify-center "
             ref={forms}
           >
@@ -46,7 +49,7 @@ const Contact = ({ className }: ContactProps) => {
               name="name"
               type="text"
               placeholder="Name"
-              className="border-b-2bg-transparent m-3  w-full border-slate-400 py-1 text-white placeholder-slate-400 outline-none low-mob:my-6 md:w-72 lg:w-80"
+              className="m-3 w-full border-b-2  border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-6 md:w-72 lg:w-80"
             />
             <input
               name="email"
@@ -57,15 +60,12 @@ const Contact = ({ className }: ContactProps) => {
             <input
               name="message"
               type="text"
-              placeholder="Message"
+              placeholder="Your Message"
               className="m-3 w-full border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-6 md:w-72 lg:w-80"
             />
 
             <Button
-              onClick={(e) => {
-                e.preventDefault();
-                sub();
-              }}
+           
               className=" m-8 mt-8 p-2  text-xl font-medium low-mob:m-8 low-mob:w-[80%]  Pc:w-[300px]"
             >
               Contact Me
