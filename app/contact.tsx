@@ -33,8 +33,8 @@ const Contact = ({ className }: ContactProps) => {
             Let&apos;s get in touch
           </h1>
         </div>
-        <div className=" ml-0 flex w-[310px] flex-col items-center justify-center rounded-3xl bg-[#1C1D21] px-0 low-mob:w-[350px] sm:mx-0 sm:w-[400px] sm:px-8 Pc:w-[50$] Pc:px-24">
-          <h1 className=" p-8 text-center  text-5xl   font-semibold">
+        <div className=" ml-0 flex w-[280px] flex-col items-center justify-center rounded-3xl bg-[#1C1D21] px-0 low-mob:w-[320px] sm:mx-0 sm:w-[400px] sm:px-8 Pc:w-[50%] Pc:px-24">
+          <h1 className="low-mob:p-6 mobile:p-8  text-center  text-5xl   font-semibold">
             Send a Message
           </h1>
           <form
@@ -42,26 +42,26 @@ const Contact = ({ className }: ContactProps) => {
             e.preventDefault();
             sub();
           }}
-            className="flex flex-col items-center justify-center "
+            className="flex w-[80%] flex-col items-center justify-center "
             ref={forms}
           >
             <input
               name="name"
               type="text"
               placeholder="Name"
-              className="m-3 w-full border-b-2  border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-6 md:w-72 lg:w-80"
+              className="m-3 w-full border-b-2  border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-3 sm:my-6 md:w-72 lg:w-80"
             />
             <input
               name="email"
               type="email"
               placeholder="Email"
-              className="m-3 w-full border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-6 md:w-72 lg:w-80"
+              className="m-3 w-full border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-3 sm:my-6 md:w-72 lg:w-80"
             />
             <input
               name="message"
               type="text"
               placeholder="Your Message"
-              className="m-3 w-full border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-6 md:w-72 lg:w-80"
+              className="m-3 w-full border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-3 sm:my-6 md:w-72 lg:w-80"
             />
 
             <Button

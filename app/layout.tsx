@@ -18,8 +18,8 @@ export default function RootLayout({
     
     <html lang="en">
       <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" />
-      <body className="bg-primary text-white">
-       <div className="z-40 w-full fixed bg-primary shadow-xl"> <Navbar/></div>
+      <body className="bg-primary text-white md">
+       <div className="z-40 w-full  bg-primary shadow-xl"> <Navbar/></div>
         {children}
       </body>
     </html>
