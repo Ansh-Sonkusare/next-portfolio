@@ -33,7 +33,7 @@ const Contact = ({ className }: ContactProps) => {
             Let&apos;s get in touch
           </h1>
         </div>
-        <div className=" ml-0 flex w-[280px] flex-col items-center justify-center rounded-3xl bg-[#1C1D21] px-0 low-mob:w-[320px] sm:mx-0 sm:w-[400px] sm:px-8 Pc:w-[50%] Pc:px-24">
+        <div className=" ml-0 flex w-[280px] flex-col items-center justify-center rounded-3xl bg-[#1C1D21] px-0 low-mob:w-[320px] sm:mx-0 sm:w-[400px] sm:px-8 Pc:w-[400px] Pc:px-24">
           <h1 className="low-mob:p-6 mobile:p-8  text-center  text-5xl   font-semibold">
             Send a Message
           </h1>
@@ -42,7 +42,7 @@ const Contact = ({ className }: ContactProps) => {
             e.preventDefault();
             sub();
           }}
-            className="flex w-[80%] flex-col items-center justify-center "
+            className="flex w-[80%]  lg:w-[300px] flex-col items-center justify-center "
             ref={forms}
           >
             <input
