@@ -48,18 +48,21 @@ const Contact = ({ className }: ContactProps) => {
             <input
               name="name"
               type="text"
+              required
               placeholder="Name"
               className="m-3 w-full border-b-2  border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-3 sm:my-6 md:w-72 lg:w-80"
             />
             <input
               name="email"
               type="email"
+              required
               placeholder="Email"
               className="m-3 w-full border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-3 sm:my-6 md:w-72 lg:w-80"
             />
             <input
               name="message"
               type="text"
+              required
               placeholder="Your Message"
               className="m-3 w-full border-b-2 border-slate-400 bg-transparent py-1 text-white placeholder-slate-400 outline-none low-mob:my-3 sm:my-6 md:w-72 lg:w-80"
             />
